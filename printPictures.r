@@ -335,6 +335,93 @@ write.table(as.matrix(out),file=output.file, sep="\t", quote=F)
 }
 
 
+jpegGenes13<-function(li=unique(gffg$Name[which(gffg$Name %in% overlap)]),output.file="PICS_NCRNA_260413.txt")
+{
+ name=0
+ 
+ for (i in 1:length(li))
+ #for (i in 1:1)
+ {
+  if(li[i] %in% spncrna_segments[,1])
+  {
+   s_start=spncrna_segments[which(spncrna_segments[,1]==li[i]),"st_seg"]
+   s_end=spncrna_segments[which(spncrna_segments[,1]==li[i]),"end_seg"]
+  }
+  else
+  {
+   s_start=NA
+  }
+  
+  if(is.na(s_start)==T)
+  {
+   s_start=0
+   s_end=0 
+  }
+  g_start=gffg$start[which(gffg$Name==li[i])]
+  g_end=gffg$end[which(gffg$Name==li[i])]
+  #print(paste(s_start,s_end,g_start,g_end),sep="-")
+  #print(i)
+  jpeg(paste(paste("SPNG",i,sep=""),"jpg",sep="."),width=1280,height=800)
+  err=try(viewGEN.sep(sep=F, gene=li[i], verbose=F,what="heatmap",high=c(g_start,g_end,s_start,s_end)),TRUE)
+  if (class(err)=="try-error")
+  {
+   plot(1,1)
+  }
+  dev.off()
+  name[i]= paste("SPNG",i,sep="")
+ }
+ out=cbind(li[1:i],name)
+ write.table(as.matrix(out),file=output.file, sep="\t", quote=F)
+}
+
+
+jpegGenes14<-function(li=unique(gffg$Name[which(gffg$Name %in% names)]),output.file="PICS_NCRNA_280413.txt")
+{
+ name=0
+ 
+ for (i in 1:length(li))
+ #for (i in 1:1)
+ 
+
+ {
+  #print(i)
+  jpeg(paste(paste("SPNG",i,sep=""),"jpg",sep="."),width=1280,height=800)
+  err=try(viewGEN.sep(sep=F, gene=li[i], verbose=F,what="heatmap"),TRUE)
+  if (class(err)=="try-error")
+  {
+   plot(1,1)
+  }
+  dev.off()
+  name[i]= paste("SPNG",i,sep="")
+ }
+out=cbind(li[1:i],name)
+write.table(as.matrix(out),file=output.file, sep="\t", quote=F)
+}
+
+jpegGenes15<-function(li=unique(gffg$Name[which(gffg$Name %in% names_sense)]),output.file="PICS_NCRNA_070513.txt")
+{
+ name=0
+ 
+ for (i in 1:length(li))
+ #for (i in 1:1)
+ 
+
+ {
+  #print(i)
+  jpeg(paste(paste("SPNG",i,sep=""),"jpg",sep="."),width=1280,height=800)
+  err=try(viewGEN.sep(sep=F, gene=li[i], verbose=F,what="heatmap"),TRUE)
+  if (class(err)=="try-error")
+  {
+   plot(1,1)
+  }
+  dev.off()
+  name[i]= paste("SPNG",i,sep="")
+ }
+out=cbind(li[1:i],name)
+write.table(as.matrix(out),file=output.file, sep="\t", quote=F)
+}
+
+
 
 
 
