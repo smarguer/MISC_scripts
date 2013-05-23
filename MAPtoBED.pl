@@ -55,27 +55,27 @@ while ($line=<IN>)
 
  if ($holder[5] eq "CH1_bases")
  {
-  $chr1{$coord[0]}{$holder[1]}="$coord[0]\t$coord[1]\t$flag1;$flag2;$holder[1];$holder[2];$holder[3];$holder[4];$holder[8];$holder[9];$holder[10];$holder[11];$holder[12]\t500\t$holder[8]\n";
+  $chr1{$coord[0]}{$holder[1]}="$coord[0]\t$coord[1]\t$count;$flag1;$flag2;$holder[1];$holder[2];$holder[3];$holder[4];$holder[8];$holder[9];$holder[10];$holder[11];$holder[12]\t500\t$holder[8]\n";
  }
  elsif ($holder[5] eq "CH2_bases")
  {
-  $chr2{$coord[0]}{$holder[1]}="$coord[0]\t$coord[1]\t$flag1;$flag2;$holder[1];$holder[2];$holder[3];$holder[4];$holder[8];$holder[9];$holder[10];$holder[11];$holder[12]\t500\t$holder[8]\n";
+  $chr2{$coord[0]}{$holder[1]}="$coord[0]\t$coord[1]\t$count;$flag1;$flag2;$holder[1];$holder[2];$holder[3];$holder[4];$holder[8];$holder[9];$holder[10];$holder[11];$holder[12]\t500\t$holder[8]\n";
  }
  elsif ($holder[5] eq "CH3_bases")
  {
-  $chr3{$coord[0]}{$holder[1]}="$coord[0]\t$coord[1]\t$flag1;$flag2;$holder[1];$holder[2];$holder[3];$holder[4];$holder[8];$holder[9];$holder[10];$holder[11];$holder[12]\t500\t$holder[8]\n";
+  $chr3{$coord[0]}{$holder[1]}="$coord[0]\t$coord[1]\t$count;$flag1;$flag2;$holder[1];$holder[2];$holder[3];$holder[4];$holder[8];$holder[9];$holder[10];$holder[11];$holder[12]\t500\t$holder[8]\n";
  }
  elsif ($holder[5] eq "MIT_bases")
  {
-  $chr4{$coord[0]}{$holder[1]}="$coord[0]\t$coord[1]\t$flag1;$flag2;$holder[1];$holder[2];$holder[3];$holder[4];$holder[8];$holder[9];$holder[10];$holder[11];$holder[12]\t500\t$holder[8]\n";
+  $chr4{$coord[0]}{$holder[1]}="$coord[0]\t$coord[1]\t$count;$flag1;$flag2;$holder[1];$holder[2];$holder[3];$holder[4];$holder[8];$holder[9];$holder[10];$holder[11];$holder[12]\t500\t$holder[8]\n";
  }
  elsif ($holder[5] eq "MAT_bases")
  {
-  $chr5{$coord[0]}{$holder[1]}="$coord[0]\t$coord[1]\t$flag1;$flag2;$holder[1];$holder[2];$holder[3];$holder[4];$holder[8];$holder[9];$holder[10];$holder[11];$holder[12]\t500\t$holder[8]\n";
+  $chr5{$coord[0]}{$holder[1]}="$coord[0]\t$coord[1]\t$count;$flag1;$flag2;$holder[1];$holder[2];$holder[3];$holder[4];$holder[8];$holder[9];$holder[10];$holder[11];$holder[12]\t500\t$holder[8]\n";
  }
  elsif ($holder[5] eq "TEL_bases")
  {
-  $chr6{$coord[0]}{$holder[1]}="$coord[0]\t$coord[1]\t$flag1;$flag2;$holder[1];$holder[2];$holder[3];$holder[4];$holder[8];$holder[9];$holder[10];$holder[11];$holder[12]\t500\t$holder[8]\n";
+  $chr6{$coord[0]}{$holder[1]}="$coord[0]\t$coord[1]\t$count;$flag1;$flag2;$holder[1];$holder[2];$holder[3];$holder[4];$holder[8];$holder[9];$holder[10];$holder[11];$holder[12]\t500\t$holder[8]\n";
  }
 
 }
