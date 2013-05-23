@@ -77,7 +77,7 @@ while ($line=<IN>)
  {
   foreach $out2 (keys %{$chr1{$out1}})
   {
-   print OUT "Chr1\t$chr1{$out1}{$out2}";
+   print OUT "chr1\t$chr1{$out1}{$out2}";
   }
  }
  @sorted = ();
@@ -87,7 +87,7 @@ while ($line=<IN>)
  {
   foreach $out2 (keys %{$chr2{$out1}})
   {
-   print OUT "Chr2\t$chr2{$out1}{$out2}";
+   print OUT "chr2\t$chr2{$out1}{$out2}";
   }
  }
  @sorted = ();
@@ -97,7 +97,7 @@ while ($line=<IN>)
  {
   foreach $out2 (keys %{$chr3{$out1}})
   {
-   print OUT "Chr3\t$chr3{$out1}{$out2}";
+   print OUT "chr3\t$chr3{$out1}{$out2}";
   }
  }
  @sorted = ();
@@ -107,7 +107,7 @@ while ($line=<IN>)
  {
   foreach $out2 (keys %{$chr4{$out1}})
   {
-   print OUT "Chr4\t$chr4{$out1}{$out2}";
+   print OUT "chr4\t$chr4{$out1}{$out2}";
   }
  }
  @sorted = ();
@@ -117,7 +117,7 @@ while ($line=<IN>)
  {
   foreach $out2 (keys %{$chr5{$out1}})
   {
-   print OUT "Chr5\t$chr5{$out1}{$out2}";
+   print OUT "chr5\t$chr5{$out1}{$out2}";
   }
  }
  @sorted = ();
@@ -127,7 +127,7 @@ while ($line=<IN>)
  {
   foreach $out2 (keys %{$chr6{$out1}})
   {
-   print OUT "Chr6\t$chr6{$out1}{$out2}";
+   print OUT "chr6\t$chr6{$out1}{$out2}";
   }
  }
  @sorted = ();
