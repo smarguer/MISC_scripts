@@ -65,15 +65,15 @@ while ($line=<IN>)
  {
   $chr3{$coord[0]}{$holder[1]}="$coord[0]\t$coord[1]\t$count;$flag1;$flag2;$holder[1];$holder[2];$holder[3];$holder[4];$holder[8];$holder[9];$holder[10];$holder[11];$holder[12]\t500\t$holder[8]\n";
  }
- elsif ($holder[5] eq "MIT_bases")
+ elsif ($holder[5] eq "CH4_bases")
  {
   $chr4{$coord[0]}{$holder[1]}="$coord[0]\t$coord[1]\t$count;$flag1;$flag2;$holder[1];$holder[2];$holder[3];$holder[4];$holder[8];$holder[9];$holder[10];$holder[11];$holder[12]\t500\t$holder[8]\n";
  }
- elsif ($holder[5] eq "MAT_bases")
+ elsif ($holder[5] eq "CH5_bases")
  {
   $chr5{$coord[0]}{$holder[1]}="$coord[0]\t$coord[1]\t$count;$flag1;$flag2;$holder[1];$holder[2];$holder[3];$holder[4];$holder[8];$holder[9];$holder[10];$holder[11];$holder[12]\t500\t$holder[8]\n";
  }
- elsif ($holder[5] eq "TEL_bases")
+ elsif ($holder[5] eq "CH6_bases")
  {
   $chr6{$coord[0]}{$holder[1]}="$coord[0]\t$coord[1]\t$count;$flag1;$flag2;$holder[1];$holder[2];$holder[3];$holder[4];$holder[8];$holder[9];$holder[10];$holder[11];$holder[12]\t500\t$holder[8]\n";
  }
