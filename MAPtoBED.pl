@@ -37,8 +37,10 @@ while ($line=<IN>)
 # print "$count\n";
  chomp ($line);
  @holder = split (/ /, $line);
-
-
+ 
+ if ($holder[0] !~ /vulgar/)
+ {next;}
+ 
  @coord= ($holder[6],$holder[7]);
  if ($coord[0] > $coord[1])
  {
